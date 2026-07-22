@@ -3,92 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="林知远的个人履历与项目作品集。" />
-    <meta name="theme-color" content="#ffffff" />
-    <title>林知远｜个人履历</title>
+    <meta name="description" content="林知远的个人主页、项目与完整履历。" />
+    <meta name="theme-color" content="#f4f5f7" />
+    <title>林知远｜个人主页</title>
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./style.css?v=magicui-1" />
-    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="./style.css?v=hybrid-1" />
   </head>
   <body>
-    <main id="top">
-      <div class="dot-field" aria-hidden="true"></div>
+    <main class="home-page" id="top">
+      <header class="home-header">
+        <div class="home-nav-shell">
+          <a class="home-brand" href="#top" aria-label="返回首页"><span class="home-brand-mark">LZ</span><span>Lin Zhiyuan</span></a>
+          <nav class="home-nav" aria-label="主要导航"><a href="#about">关于</a><a href="#projects">项目</a><a href="#resume">简历</a><a href="#contact">联系</a></nav>
+          <a class="home-header-link" href="./resume.html">查看简历 <span aria-hidden="true">↗</span></a>
+        </div>
+      </header>
 
-      <div class="page-width">
-        <section class="hero" aria-labelledby="hero-title">
-          <div class="hero-copy">
-            <div class="availability reveal"><span aria-hidden="true"></span>目前开放新的工作机会</div>
-            <h1 class="reveal" id="hero-title">你好，我是林知远</h1>
-            <p class="hero-role reveal">业务运营经理，关注策略、增长与跨团队项目落地。</p>
-            <div class="hero-links reveal"><a href="mailto:hello@example.com">邮箱</a><a href="#projects">项目</a><a href="#experience">履历</a></div>
-          </div>
-          <div class="portrait reveal" aria-label="林知远头像占位符">LZ</div>
-        </section>
+      <section class="home-hero home-shell" aria-labelledby="hero-title">
+        <div class="home-avatar-wrap hero-enter"><div class="home-avatar" aria-label="林知远头像占位符"><span>LZ</span></div><span class="home-avatar-status" aria-label="目前开放新的工作机会"></span></div>
+        <p class="home-kicker hero-enter">业务运营经理 · 上海</p>
+        <h1 class="hero-enter" id="hero-title">林知远</h1>
+        <p class="home-hero-lead hero-enter">我把复杂的业务问题，转化为<span>清晰策略</span>、稳定流程和可执行的团队节奏。</p>
+        <div class="home-credentials hero-enter" aria-label="个人概况"><span>5 年经验</span><span>策略与增长</span><span>开放工作机会</span></div>
+        <div class="home-hero-actions hero-enter"><a class="home-button home-button-primary" href="#about">了解我</a><a class="home-button home-button-secondary" href="./resume.html">查看完整简历</a></div>
+        <a class="home-scroll-cue" href="#about" aria-label="继续向下浏览"><span></span>向下浏览</a>
+      </section>
 
-        <section class="resume-section" id="about" data-reveal>
-          <h2>关于</h2>
-          <p class="about-copy">过去五年，我参与过增长实验、服务流程重构和新业务孵化。我擅长把复杂问题拆成清晰的行动路径，从研究和分析出发，推动团队在真实约束中持续产生结果。</p>
-        </section>
+      <section class="home-section home-shell" id="about" data-reveal>
+        <div class="home-section-heading"><span>01 / 关于我</span><h2>把洞察变成真正发生的改变。</h2></div>
+        <div class="home-about-grid">
+          <p class="home-about-lead">过去五年，我参与过增长实验、服务流程重构和新业务孵化。相比一份漂亮但悬空的策略，我更在意它能否被团队理解、执行，并在真实约束中产生结果。</p>
+          <dl class="home-facts">
+            <div><dt>现在</dt><dd>未来方舟科技<br />业务运营经理</dd></div>
+            <div><dt>专长</dt><dd>增长策略<br />项目与流程设计</dd></div>
+            <div><dt>工作方式</dt><dd>从研究出发<br />用协作完成落地</dd></div>
+          </dl>
+        </div>
+      </section>
 
-        <section class="resume-section" id="experience" data-reveal>
-          <h2>工作经历</h2>
-          <div class="resume-list">
-            <article class="resume-item">
-              <div class="item-mark" aria-hidden="true">未</div>
-              <div class="item-main">
-                <div class="item-heading"><div><h3>未来方舟科技</h3><p>业务运营经理</p></div><time>2023 — 至今</time></div>
-                <p class="item-detail">负责重点行业的业务策略与项目推进，协调销售、产品和交付团队；重构线索到交付流程，将平均推进周期缩短 28%。</p>
-              </div>
-            </article>
-            <article class="resume-item">
-              <div class="item-mark" aria-hidden="true">栖</div>
-              <div class="item-main">
-                <div class="item-heading"><div><h3>栖木咨询</h3><p>项目顾问</p></div><time>2021 — 2023</time></div>
-                <p class="item-detail">参与 12 个消费与科技行业项目，承担研究、分析、方案设计与落地跟进，将用户洞察转化为可验证的服务改进。</p>
-              </div>
-            </article>
-          </div>
-        </section>
+      <section class="home-section home-shell" id="projects" data-reveal>
+        <div class="home-section-heading home-section-heading-row"><div><span>02 / 精选项目</span><h2>近期工作</h2></div><p>从问题定义、策略设计到推动落地。</p></div>
+        <div class="home-project-list">
+          <article class="home-project"><span class="home-project-index">01</span><div class="home-project-main"><div class="home-project-title"><h3>线索转化流程重构</h3><time>2025</time></div><p>重新梳理五个协作角色和七个关键节点，把依赖经验的推进过程变成可追踪、可复盘的工作流。</p><div class="home-project-tags"><span>流程设计</span><span>跨团队推进</span><span>数据复盘</span></div></div><span class="home-project-arrow" aria-hidden="true">↗</span></article>
+          <article class="home-project"><span class="home-project-index">02</span><div class="home-project-main"><div class="home-project-title"><h3>区域增长策略试点</h3><time>2024</time></div><p>结合渠道数据、用户访谈与销售反馈制定城市分层策略，并在三个重点区域完成验证。</p><div class="home-project-tags"><span>增长策略</span><span>用户研究</span><span>项目管理</span></div></div><span class="home-project-arrow" aria-hidden="true">↗</span></article>
+          <article class="home-project"><span class="home-project-index">03</span><div class="home-project-main"><div class="home-project-title"><h3>用户反馈闭环</h3><time>2023</time></div><p>整合客服、访谈和行为数据，建立统一分类与优先级机制，让用户声音持续进入产品决策。</p><div class="home-project-tags"><span>定性研究</span><span>数据分析</span><span>机制建设</span></div></div><span class="home-project-arrow" aria-hidden="true">↗</span></article>
+        </div>
+      </section>
 
-        <section class="resume-section" id="education" data-reveal>
-          <h2>教育背景</h2>
-          <div class="resume-list compact">
-            <article class="resume-item"><div class="item-mark" aria-hidden="true">华</div><div class="item-main item-heading"><div><h3>华东师范大学</h3><p>管理学硕士</p></div><time>2018 — 2021</time></div></article>
-            <article class="resume-item"><div class="item-mark" aria-hidden="true">浙</div><div class="item-main item-heading"><div><h3>浙江工商大学</h3><p>工商管理学士</p></div><time>2014 — 2018</time></div></article>
-          </div>
-        </section>
+      <section class="home-section home-shell" id="resume" data-reveal>
+        <div class="home-section-heading home-section-heading-row"><div><span>03 / 完整简历</span><h2>一页看清经历与能力。</h2></div><p>这是嵌入主页的精简预览，完整版支持打印和保存 PDF。</p></div>
+        <div class="resume-embed" aria-label="完整简历界面预览">
+          <div class="resume-embed-header"><div><h3>林知远</h3><p>业务运营经理，关注策略、增长与跨团队项目落地。</p><span>上海，中国 · hello@example.com</span></div><div class="resume-embed-avatar" aria-hidden="true">LZ</div></div>
+          <div class="resume-embed-section"><h4>工作经历</h4><article><div><strong>未来方舟科技</strong><span>业务运营经理</span></div><time>2023 — 至今</time><p>负责重点行业业务策略与项目推进；重构线索到交付流程，平均推进周期缩短 28%。</p></article><article><div><strong>栖木咨询</strong><span>项目顾问</span></div><time>2021 — 2023</time><p>参与 12 个消费与科技行业项目，承担研究、分析、方案设计与落地跟进。</p></article></div>
+          <div class="resume-embed-footer"><div><span>教育背景</span><strong>华东师范大学 · 管理学硕士</strong></div><div><span>核心能力</span><strong>研究 · 策略 · 数据 · 项目推进</strong></div><a href="./resume.html">打开完整简历 <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
 
-        <section class="resume-section" id="skills" data-reveal>
-          <h2>能力与工具</h2>
-          <div class="skill-cloud"><span>用户研究</span><span>业务诊断</span><span>增长策略</span><span>数据分析</span><span>项目规划</span><span>跨团队推进</span><span>流程设计</span><span>SQL</span><span>Tableau</span><span>Figma</span></div>
-        </section>
-
-        <section class="projects-section" id="projects" data-reveal>
-          <div class="section-intro"><span>代表项目</span><h2>近期工作</h2><p>几项从问题定义、策略设计到推动落地的代表性项目。</p></div>
-          <div class="project-grid">
-            <article class="project-card project-1">
-              <div class="project-visual" aria-hidden="true"><span>01</span><i>运营体系</i></div>
-              <div class="project-body"><div class="project-heading"><h3>线索转化流程重构</h3><time>2025</time></div><p>梳理五个协作角色与七个关键节点，把模糊的跟进过程整理成可追踪、可复盘的工作流。</p><div class="project-tags"><span>流程设计</span><span>跨团队协作</span><span>数据复盘</span></div></div>
-            </article>
-            <article class="project-card project-2">
-              <div class="project-visual" aria-hidden="true"><span>02</span><i>增长实验</i></div>
-              <div class="project-body"><div class="project-heading"><h3>区域增长策略试点</h3><time>2024</time></div><p>结合渠道数据、用户访谈和销售反馈制定城市分层打法，并在三个重点区域完成验证。</p><div class="project-tags"><span>增长策略</span><span>用户研究</span><span>项目管理</span></div></div>
-            </article>
-            <article class="project-card project-3">
-              <div class="project-visual" aria-hidden="true"><span>03</span><i>用户研究</i></div>
-              <div class="project-body"><div class="project-heading"><h3>用户反馈闭环</h3><time>2023</time></div><p>整合客服、访谈和行为数据，建立统一分类与优先级机制，让用户声音持续进入产品决策。</p><div class="project-tags"><span>定性研究</span><span>数据分析</span><span>机制建设</span></div></div>
-            </article>
-          </div>
-        </section>
-
-        <footer id="contact" data-reveal>
-          <h2>保持联系</h2><p>如果你有合适的机会，欢迎和我聊聊。</p>
-          <a class="email-link" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
-          <div class="footer-meta"><span>上海 · 中国</span><span>© 2026 林知远 · 当前为示例履历</span></div>
-        </footer>
-      </div>
-
-      <nav class="dock" aria-label="快捷导航"><a href="#top" aria-label="返回顶部">⌂</a><a href="#experience" aria-label="工作经历">履</a><a href="#projects" aria-label="代表项目">项</a><span aria-hidden="true"></span><a href="mailto:hello@example.com" aria-label="发送邮件">↗</a></nav>
+      <section class="home-contact" id="contact" data-reveal>
+        <div class="home-shell"><span>04 / 保持联系</span><h2>有合适的机会，欢迎来聊聊。</h2><a href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a><div class="home-footer-meta"><span>上海 · 中国</span><span>© 2026 林知远 · 当前为示例内容</span></div></div>
+      </section>
     </main>
     <script>
       const nodes = document.querySelectorAll("[data-reveal]");
@@ -97,7 +70,7 @@
           entries.forEach((entry) => {
             if (entry.isIntersecting) { entry.target.classList.add("is-visible"); observer.unobserve(entry.target); }
           });
-        }, { threshold: 0.1, rootMargin: "0px 0px -36px" });
+        }, { threshold: 0.12, rootMargin: "0px 0px -48px" });
         nodes.forEach((node) => observer.observe(node));
       } else { nodes.forEach((node) => node.classList.add("is-visible")); }
     </script>
